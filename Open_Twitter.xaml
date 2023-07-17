@@ -1,0 +1,325 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Open_Twitter" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="694,6089" sap2010:WorkflowViewState.IdRef="Open_Twitter_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Implementation</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Open_Twitter" sap:VirtualizedContainerService.HintSize="704,6024" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Image" Name="TrendingImage" />
+      <Variable x:TypeArguments="x:String" Name="TopTrending" />
+      <Variable x:TypeArguments="x:String" Name="SecondTrending" />
+      <Variable x:TypeArguments="x:String" Name="ThirdTrending" />
+      <Variable x:TypeArguments="x:String" Name="FourthTrending" />
+      <Variable x:TypeArguments="x:String" Name="FifthTrending" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Open Chrome: Twitter" sap:VirtualizedContainerService.HintSize="642,5913" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="8f1aa626-f8d2-416d-be88-34c92c12d699" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="608,5696" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Open Trending and Get Text" sap:VirtualizedContainerService.HintSize="546,3274" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Trending &quot;Explore&quot;" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/home" CvTextArgument="Explore" CvType="Text" DesignTimeRectangle="116, 200, 68, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Explore'" FullSelectorArgument="&lt;webctrl aaname='Explore' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Explore' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='Explore' /&gt;" Guid="a462c138-0144-49ed-bcf4-e512a3625d58" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAcCAYAAADC8vmmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVGhD7ZQ9SgRBFIS9gYmJZzEw8AaCgakgGAqCmSAYCWIm4hFEPIfoEdQr7G644UgNW/K2rNeN+6Or9AeN2t3T79U3Pa51jSJNUIUmqEITVKEJqtAEVVhJQU/PL936xmb/87eZEjQej7vjk9O+uWxcXl1Pdi+PlRe0u7ffDQbDyezP0wRV+BeC8Km5Ty5+pvcPj/0cgm5t73Svb+/9HNY43CdbEsQ1Dp6roA5zsKbWYgYO9I3+I3PdIBaIQRiAcgDmEOTs/GKqSQTDvDbGM+K5AM+qEIaP9QAF3dzefRHjcmbZ5xKEPdjL/fo3YWAVATKhKsjNkZI4VxNr7ubxhUWhVhAOzoY2yMZRlE2V9iiUGoNwfzwHTat4wmDxfPaiNZnRiXNrC/knjebRDIZeZ+ACE1dT9zuJEa7H2tnLcrckoi9iIYJY1F1bgCazNaBNzSoorkOQq8lecX42FiqIzxwcHvXDhdDAEVdzVkF6g0qCshukzC0oXmUG0+8+mwcuvAoCessiDB3PzwTVZCtzCXJvA79rYwzsmnLynCA3R1zNTBDI1tAbzorZZxaU7aW0KIPhUDzKdHtBJgPP6jzCYi4KBiVBWe88P/ZjBWFTNrA+HI0+92ljgE2zUAzM3zmiMBL3K/r8d29JhEI43MWYErQsSoFXnSaoQhNUoQmq8COC/jJNUIUmqEjXfQCrBujIx2WkQwAAAABJRU5ErkJggg==" InformativeScreenshot="7c8f7914aba6bbca393d83f1e228b4ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Home / Twitter' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Home" CvType="Text" DesignTimeRectangle="116, 150, 57, 24" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='Home' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAcCAYAAADSkrd6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVFhH7ZRBSgNBEEW9QTZuPIsLF94gkIW3EAR3guBKCLmHiOcQPULiFeJ2liVfUsmbpntGMoWI3Q8+hO6q6vrVPTmxCmmma6GZroVmuhZ6ptebDzu/uLTZ6Zld39xa13W7nQPb7afNF1eDMX+dZrqZPtI0911jcU/PL/b69t7LeVyudpH2/dvX1Z/6zKE6rCGpbkqo6dyhFBtgnbv7h/25lMzSsEt5yndyg6Y4QBFmmrlsqrSeNqqBCcZLPIMD8Hjh68pTvlNaL5r+idgQbzl9Urk9muYwBM2xln77ut8e63AQgn64F2Ja0m+tpVMVY81yeKJ0Q+zP67D2kDxehDxvmk5vTeSa/Vem00bFb910+rxLhP2RTfmmp5geqlMizDRzta+4ofUo08LjJd62v4K0fphpwaeWE19ApGnlqoafkxPPDjUtuO8ai5tq2uFn5Mp95z3TtdBM10IzXQvNdB2YfQHHTl/lAtSWEQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Trending'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/for-you" CvTextArgument="Trending" CvType="Text" DesignTimeRectangle="468, 149, 62, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Trending'" FullSelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='Trending' /&gt;" Guid="893735a7-64da-45cd-bc42-2e4b0913d75c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAYCAYAAABOQSt5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGtSURBVFhH7ZOxSgUxEEX9R2s7wUrQRhDBwkobCzvL175OO7/AStDCQgt5PyBaPcvIDbkwe3eiWXZ94DIHwm6yyUzmJLuVgkyIKISIQogohIhCiChkEa9vq7Szf5y2dw+r7f7hKS/YFOv1Vzo5v8oN7+8fn2nv6Cw3vE9N70ZwA3+VsBUVwcNCw/vU/BsRU4GbjRuucZtFIABO4/H5pff98nrR+Y2Wt3d5HHAdnljjzQGIZb8vljcdESqGfeRGLK7TfWvc2o0aLOLg9KITCBuxc2mchbJv53Dj+Aa8nJyjhWvf5mLRtTVA90sGibBJAf9bO6bJW9Z5czROra/7tIV6+2MuHgIZLMIG4JjXuGFvnW4QT50DUJQWXusTK8KbM9mNsJvlmDWueOs2JQJwHuKjIS/yK6NEsCAkr9EignOsUC30tz6xItDw/tNBkVEiABLbcZXjrVMRXk7eklrh2id6IxhHm9YxWgTQZPYEWkQAnh5joCC0WuHaJ1YE8+ieVRboiZgTEK0FA4xDEESRWYvgbfRunt6kWYsAkMDfzf52yuxFtBIiCiGiECIyKX0Dnl4JLIuS628AAAAASUVORK5CYII=" InformativeScreenshot="334f54c069c159cfbf45fa6a8a7b471d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="For you" CvType="Text" DesignTimeRectangle="356, 149, 53, 20" ElementType="Text" FriendlyName="'For you'" FullSelectorArgument="&lt;webctrl aaname='For you' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='For you' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='For you' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAYCAYAAABA6FUWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVFhH7ZWxSsRAEIZ9Axsbn8XCwic44UDfQhDsBMFKEN9DxFdQrERLtdJr1epsU658IX8cx13cnCSHST5YjszMzv7/Tu5uJQyA0WRfGE32hWGZvL27D6tr69FF7j8zTJN7+wehKIoq2g8amZzPP8L2dLee8MbmVnh+mVXZrzw9Hh6fyvzJ6VmVDWVfcuy1cXpQa/udX1zW5/h64Jm4fctiMcg2KSE61C41lcnJdKeu9eLUhzrqQYZUK7F+WW1/MumXxKhB7CDF7KTJxbDTlBgrzl6m8rFYzFAsBlkmX9/efwgDPxWZJEYuhc5ClPaoh3L2MkEGmLp9tnqyTfrmELt9SJnUcwrV0fPq+qbsi0BY1GRKI2R/J9XU5n0s1ySwlws6PDr+Jqzp68onxGpEKz88OSZtP18vA35Zbf7X166FTYJMqBkiESuamOQMzqKPpmH57S/E7ldee5Imu0aT9BfVBp2b1BtjJ9A2SzXZhUFY2uvaJaPJvjAAkyF8AvHbNbdbb7bnAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Twitter Trending Open&quot;]" />
+              <uix:NTakeScreenshot DisplayName="Take Screenshot 'Trending'" FileName="images\Trending_Loop.xaml" FileNameMode="None" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" OutImage="[TrendingImage]" SaveScreenshotTo="Clipboard" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" Version="V3">
+                <uix:NTakeScreenshot.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/trending" DesignTimeRectangle="325, 124, 600, 2905" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'For youTrendingNewsSpor…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='react-root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='react-root' tag='DIV' class='css-1dbjc4n r-14lw9ot r-jxzhtn r-1ljd8xs r-13l2t4g r-1phboty r-16y2uox r-1jgb5lz r-11wrixw r-61z16t r-1ye8kvj r-13qz1uu r-184en5c' aaname='' /&gt;" Guid="6df5351a-8bae-4f6d-aa57-0356c0a6d8a2" InformativeScreenshot="e199fa1c95a584ea393b28976cddbce7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Trending" CvType="Text" DesignTimeRectangle="466, 194, 64, 20" ElementType="Text" FriendlyName="'Trending'" FullSelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='Trending' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAYCAYAAABDX1s+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVFhH7ZM9SgRBFIS9gYmJZzEw8AaCgaEgmAqCdxDEK4gYiXgO0SOoV1jTCVu+YUtqHz3/4+/2B4+dedNdXVPzdiMVViiBBEoggRJIoAQSKIEEPgO5uLxKm1vbjbV/cJgWi/fl6u/j7v6hPh9/8Pj0XN/v7O6ll9e3ujcnfy4QPODlywNxZOL07DxVVbXs/gwxkDnREHCGGBSI+owtYv6V+OWe55RPFBpo0WOvr+Pe0RkUe65vbuvrOCHSH6KtAGJNDuTo+KT+VSAcLHGvaLptjevnqiuQ3B7XjtMgz9IVowLxyXBD/kVkgJ6vkQGfqKY1uV5bIF3a7jvqiFGB6GCQMP1csSdnyF8E09LxNcAz1nQF0qYN7JcfiLpiVCAShaYXcX5DICD/qhgGTA7ED/cDuJaZPqZzOrne2EDwrD1tTA4E9BVjyeQQ01FDNTUQ9kdNKoY0SyCAGUzlDuprGjwUNHjGvqmBeC+WtCEbyH9DIRIIwQh9RO+vRSB6cZ9aYHqYEJ/4tQgE9PKx/O8KaxNIX0oggRJIoASyQkofq1SYf0/jv+4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTakeScreenshot.Target>
+              </uix:NTakeScreenshot>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Screenshot succesful&quot;]" />
+              <uix:NGetText DisplayName="Get Text 'TopTrending'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" TextString="[TopTrending]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/trending" DesignTimeRectangle="326, 234, 598, 86" DesignTimeScaleFactor="1" FriendlyName="'1·Trending in'" FullSelectorArgument="&lt;webctrl aria-role='link' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='link' tag='DIV' type='' class='css-1dbjc4n r-1loqt21 r-6koalj r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg' aaname='' /&gt;" Guid="bbf91d7f-6a92-4941-9cbc-fb0d9544e207" InformativeScreenshot="58107639597bec4a0fdb9fdb715c5c48.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CvTextArgument="Trending" CvType="Text" DesignTimeRectangle="466, 149, 64, 20" ElementType="Text" FriendlyName="'Trending'" FullSelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='Trending' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAYCAYAAABDX1s+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVFhH7ZM9SgRBFIS9gYmJZzEw8AaCgaEgmAqCdxDEK4gYiXgO0SOoV1jTCVu+YUtqHz3/4+/2B4+dedNdXVPzdiMVViiBBEoggRJIoAQSKIEEPgO5uLxKm1vbjbV/cJgWi/fl6u/j7v6hPh9/8Pj0XN/v7O6ll9e3ujcnfy4QPODlywNxZOL07DxVVbXs/gwxkDnREHCGGBSI+owtYv6V+OWe55RPFBpo0WOvr+Pe0RkUe65vbuvrOCHSH6KtAGJNDuTo+KT+VSAcLHGvaLptjevnqiuQ3B7XjtMgz9IVowLxyXBD/kVkgJ6vkQGfqKY1uV5bIF3a7jvqiFGB6GCQMP1csSdnyF8E09LxNcAz1nQF0qYN7JcfiLpiVCAShaYXcX5DICD/qhgGTA7ED/cDuJaZPqZzOrne2EDwrD1tTA4E9BVjyeQQ01FDNTUQ9kdNKoY0SyCAGUzlDuprGjwUNHjGvqmBeC+WtCEbyH9DIRIIwQh9RO+vRSB6cZ9aYHqYEJ/4tQgE9PKx/O8KaxNIX0oggRJIoASyQkofq1SYf0/jv+4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                        <uix:Target CvTextArgument="1 = Unscripted reality ." CvType="Text" DesignTimeRectangle="342, 249, 6, 15" ElementType="Text" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl aaname='1' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1' type='' tag='SPAN' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='1' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABESURBVDhPY/hPJBiSCt++//C/sL7r/617D6AiEIChsG/mwv+xuZW4FR4/e/F/cErh/+kLVxJnItFWDyuFuMDgV/j/PwDG9N2zOxGrLwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[TopTrending]" />
+              <uix:NGetText DisplayName="Get Text 'SecondTrending'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" TextString="[SecondTrending]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/trending" DesignTimeRectangle="326, 320, 598, 86" DesignTimeScaleFactor="1" FriendlyName="'2·Wrestling ·'" FullSelectorArgument="&lt;webctrl aria-labelledby='id__ec5ja5e94sw' aria-role='link' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='id__ec5ja5e94sw' aria-role='link' tag='DIV' type='' class='css-1dbjc4n r-1loqt21 r-6koalj r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg' aaname='' /&gt;" Guid="952f81e2-27df-41ff-9edc-37b49180957e" InformativeScreenshot="ed6391229638f084dc6474b917388c14.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CvTextArgument="Trending" CvType="Text" DesignTimeRectangle="466, 149, 64, 20" ElementType="Text" FriendlyName="'Trending'" FullSelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trending' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='Trending' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAYCAYAAABDX1s+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVFhH7ZM9SgRBFIS9gYmJZzEw8AaCgaEgmAqCdxDEK4gYiXgO0SOoV1jTCVu+YUtqHz3/4+/2B4+dedNdXVPzdiMVViiBBEoggRJIoAQSKIEEPgO5uLxKm1vbjbV/cJgWi/fl6u/j7v6hPh9/8Pj0XN/v7O6ll9e3ujcnfy4QPODlywNxZOL07DxVVbXs/gwxkDnREHCGGBSI+owtYv6V+OWe55RPFBpo0WOvr+Pe0RkUe65vbuvrOCHSH6KtAGJNDuTo+KT+VSAcLHGvaLptjevnqiuQ3B7XjtMgz9IVowLxyXBD/kVkgJ6vkQGfqKY1uV5bIF3a7jvqiFGB6GCQMP1csSdnyF8E09LxNcAz1nQF0qYN7JcfiLpiVCAShaYXcX5DICD/qhgGTA7ED/cDuJaZPqZzOrne2EDwrD1tTA4E9BVjyeQQ01FDNTUQ9kdNKoY0SyCAGUzlDuprGjwUNHjGvqmBeC+WtCEbyH9DIRIIwQh9RO+vRSB6cZ9aYHqYEJ/4tQgE9PKx/O8KaxNIX0oggRJIoASyQkofq1SYf0/jv+4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                        <uix:Target DesignTimeRectangle="342, 335, 8, 15" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='2' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVDhPY/j+/ft/UvCw03Dl+q3/sbmV/4NTCsG4e9p8FMUgDNfw7PnL/2mljf8PHT+Nwl+2bit2DSDT82s7wAphYiDF6Lag2PDu/QcUSZBinBrQMcgAkI0gm5HFsWrA5X4QxtAACylsikEYRQNIEchkZI+jY7gGUHDCwh8ZV7ZNQAkMnJ7GhYe+hu//AQ2MUHgk+L/3AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[SecondTrending]" />
+              <uix:NGetText DisplayName="Get Text 'ThirdTrending'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" TextString="[ThirdTrending]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/trending" DesignTimeRectangle="326, 407, 598, 86" DesignTimeScaleFactor="1" FriendlyName="'3·Entertainment ·'" FullSelectorArgument="&lt;webctrl aria-labelledby='id__7osijvw57bo' aria-role='link' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='id__7osijvw57bo' aria-role='link' tag='DIV' type='' class='css-1dbjc4n r-1loqt21 r-6koalj r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg' aaname='' /&gt;" Guid="32052d6e-8735-4b1f-a9fb-603e9f9046c0" InformativeScreenshot="1b8242e4cc07282b7dd5c50ea64a5ec8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Communities" DesignTimeRectangle="342, 422, 8, 15" ElementType="Text" FriendlyName="'3'" FullSelectorArgument="&lt;webctrl aaname='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='3' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVDhPY/hPIhh2Gm7de/A/Nrfyf3BKIRhXd0z6/+3bd6gsBMA1gBSnlzWCaRAAKQRpWLVpJ5gPA3ANb99/+H/87EUUE0GK+2YuhPIgAKcfYDaADEEGGBpgCkF+QFcMAjhtAAGQc9A9jlcDKAAK67vA/oMBuAaQ9aAghYUSCBC0AaQJFgcE44FYMPQ1/P8PAMkRZaCE3oJrAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[ThirdTrending]" />
+              <uix:NGetText DisplayName="Get Text 'FourthTrending'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" TextString="[FourthTrending]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/trending" DesignTimeRectangle="326, 493, 598, 86" DesignTimeScaleFactor="1" FriendlyName="'4·Only on'" FullSelectorArgument="&lt;webctrl aria-labelledby='id__jfu6efuf9fo' aria-role='link' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='id__jfu6efuf9fo' aria-role='link' tag='DIV' type='' class='css-1dbjc4n r-1loqt21 r-6koalj r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg' aaname='' /&gt;" Guid="e3eab9d0-3da8-4875-890e-74f8dd8e4d13" InformativeScreenshot="b8a86b2684eccf8d8f6ae817ecf6b9f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="4 Only on Twitter ." CvType="Text" DesignTimeRectangle="342, 508, 8, 15" ElementType="Text" FriendlyName="'4'" FullSelectorArgument="&lt;webctrl aaname='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='4' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='4' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVDhPY/hPIhjWGo6fvfg/OKUQTCMDrBpu3Xvwv7pj0v/C+i7CGr59+/6/ZcKs/xeu3gRrIqihb+bC/6s27QRrJKgBJAnSAAIENYDcDXLz2/cfwHyCGkDOAIUKNgzSCDIABDD8AANE+QEZkKwBFxj6Gv7/BwBEJGPc5ZznKwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[FourthTrending]" />
+              <uix:NGetText DisplayName="Get Text 'FifthTrending'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="8f1aa626-f8d2-416d-be88-34c92c12d699" TextString="[FifthTrending]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://twitter.com/explore/tabs/trending" DesignTimeRectangle="342, 591, 566, 42" DesignTimeScaleFactor="1" FriendlyName="'5·MLB ·'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='5' parentid='react-root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-1dbjc4n r-16y2uox r-bnwqim' parentid='react-root' tag='DIV' aaname='' /&gt;" Guid="230dd8d8-04a5-42fb-a105-c0be6d1ab7a0" InformativeScreenshot="672668b93fccd87463153563ff9b6753.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Explore / Twitter' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="More" DesignTimeRectangle="342, 594, 8, 15" ElementType="Text" FriendlyName="'5'" FullSelectorArgument="&lt;webctrl aaname='5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='5' tag='SPAN' type='' class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0' check:innerText='5' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVDhPY/hPIhh2GlZt2vk/OKUQBffNXAiVhQAUDSDJ42cvQnnYAVzDt2/f/7dMmPX/1r0HUBHsAEUDyIbpC1fCnZNe1vT/7fsPUBUQANcAkgApAPkDBkAGVHdMAhsGAyh+QAcg56WXNaI4k6CGwvouFGfBNYBCJza3EsU0kJPwBitIE3IcoLsfBPA6CRsY+hr+/wcAYOhhBLoVfgYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[FifthTrending]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Obtained Trending Text&quot;]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Hello, &#xA;This is the Daily Trending Twitter Bot sending you a message!&#xA;For today we have  - &quot; + TopTrending +&quot; - as our top trending.&quot; + vbCrLf +&#xA;SecondTrending + &quot; - as our second trending. &quot; + vbCrLf +&#xA;ThirdTrending + &quot; - as our third trending. &quot;  + vbCrLf +&#xA;FourthTrending + &quot; - as our fourth trending. &quot; + vbCrLf +&#xA;FifthTrending + &quot; - as our fifth trending. &quot;]" />
+            </Sequence>
+            <Sequence DisplayName="Create Notification" sap:VirtualizedContainerService.HintSize="546,2267" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Friends - Discord" sap:VirtualizedContainerService.HintSize="484,2152" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" ScopeGuid="d22e86fe-6218-45b7-9690-2b584616c478" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1861" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Latenightsnack'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d22e86fe-6218-45b7-9690-2b584616c478" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArgument="Latenightsnack" CvType="Text" DesignTimeRectangle="132, 174, 106, 20" DesignTimeScaleFactor="1" FriendlyName="'Latenightsnack'" FullSelectorArgument="&lt;ctrl name='Friends' role='document' /&gt;&lt;ctrl name='Private channels' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='list' /&gt;&lt;ctrl name='Latenightsnack (direct message)' role='link' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Friends' role='document' /&gt;&lt;ctrl name='Private channels' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='list' /&gt;&lt;ctrl name='Latenightsnack (direct message)' role='link' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Latenightsnack' /&gt;" Guid="b3d3ebc9-ab9e-4685-8dba-6cfc4c0ee994" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAYCAYAAAAbIMgnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASESURBVGhD7Vhdb9pIFN3/U7WoKFaLiBZE1CCLsCA2DSqKqPxg1S1poNmEiCBEI2utygiQI7KqFSHxkP959o49DmPHAbPb1capH47AM3fuPXPPfFz7l2fPXyJB/JAIF1MkwsUUiXAxRSJcTBEb4dKNCWa2DU0O77+HdyZmN2S/E9L3qFGBNr7FbKCF9C3hE25/QAPGfeSEto2RVXEyuob6gxPmCRfZbxTh/iOu/w7/l3A7fRiPYaVHEe6xcPXhZxSuNIR+oUFi/xPh/JB+O0fPXFBSyNZewLzsQ37F+nhA1i7AOKq4Y9MHaA5sWLbbbpkG6nmJ+3XHGscq6hfcxp5joNZ4P+GeEHnIRxOY3J95aeLrjHx8afqEax2eY2BxPpaJhhNzFVcJ2w0Dxnfe/t1Gt1HiMSPwJDycI45UicZfL3MxMtGUX/P+gHBk27gkXzMT+4KPDYWrQB0tYFx0IBeKyO2dYkDJml1+RpomnM4UkakOYbKEVel/tghpiyWqCOUb2U1N1IvUXlTR+pORMVBOuX69ROpnKgrZA+x3bXoWhAoIl266d16rVqE4tCjY5KZ9FDyujj35vJpA2SObYsfl+u0UmVVcs6fQbxbQjxXkGI+2hTHxrKaZ3wg8V+aI9edJCHqeWdAY90IDCuNuW2hmhRhMuFQNipMnv2gMmx+VKW+XuCgcE/GrIXa9trDjh46w8c01lF+Fti1KJCXopMaeOVm9wyfn9d+i944/B4TLHVFckavTTxP0Pc/RKvFngjNGtAnj6rRRwXJ3GtCvs7gYIvBkWJUjmS0Wmvfvgg0JVK7u8GceY9iHatJviGgMmwuXrqDenkC/opXAVrSD1cnIqNeCrR/uhIVV5vl5rqF31094YMdpe2y38B1nCQsoYM8QSbiUghO2Qyi2NbXQa3ewm/WSHIEnw4ocubmYoH63GILgMbxxP0Q4b1LTCbTDBh0lRZS/rE9GZLIbCPfsDcWh+2PM7yJrJN6ZIfaESMIxUOLLH4boXkzcu872TosIPNfkKHIumGAF8k2+rCEvuARsJpw30TdemwT5bL4+Gc5RuaDJbS/baGwmm+f/NxVuGw39FoP3or8A/rFwIi9CSuQRgee6HIUdlVQDVA95URWMUTNCchcm3HSIMq0SdlmLkNjl7FzcrHITLm6nMhKSkT8n4mRzRjZ08VZLRWrnxQmt3Hb9gPx5YzdYySHCWfopFQgCz1deZRa0d3FPuBCuL+omVXtz9D4p5LsC+aMFi92VzhebCDzX5oiKE+LuK06GJOzdx4VgDJorK2bEa4BwXzgKGgaXmISCyktwOqYMemeSP7CtLySDApX/8EplWinvmXDUzs59oQSeWRZabwMXcmThJOQ+UVzPlwD9Iy/NowgXyvU1dhUT+l/cZ8jrwEqeUXK0yesAg7NL6YRpLnedT7jYwNkp4nHEIGG3TcKsK66eCOIp3NZnDGi1Gl32LsWPSXo3PBndYtxVwsc8McRTOMILubP8OuEcaXN8PdOw/WC19rQQW+F+diTCxRSJcDFFIlws8RJ/AyXlyMOtNwB2AAAAAElFTkSuQmCC" InformativeScreenshot="1ed2ec44cbe1b7ea59f3bbc672b5748f.png" ScopeSelectorArgument="&lt;wnd app='discord.exe' cls='Chrome_WidgetWin_1' title='Friends - Discord' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvElementArea="77, 75, 228, 48" CvTextArea="131, 91, 53, 15" CvTextArgument="Friends" CvType="InputBox" DesignTimeRectangle="78, 74, 228, 48" ElementType="InputBox" FriendlyName="'Friends'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into '﻿Discord'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d22e86fe-6218-45b7-9690-2b584616c478" Text="[&quot;Hello, &#xA;This is the Daily Trending Twitter Bot sending you a message!&#xA;For today we have  - &quot; + TopTrending +&quot; - as our top trending.&quot; + vbCrLf +&#xA;SecondTrending + &quot; - as our second trending. &quot; + vbCrLf +&#xA;ThirdTrending + &quot; - as our third trending. &quot;  + vbCrLf +&#xA;FourthTrending + &quot; - as our fourth trending. &quot; + vbCrLf +&#xA;FifthTrending + &quot; - as our fifth trending. &quot;]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CvElementArea="333, 549, 715, 41" CvTextArea="383, 561, 183, 18" CvTextArgument="Message @Latenightsnack" CvType="InputBox" DesignTimeRectangle="384, 548, 565, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'﻿'" FullSelectorArgument="&lt;ctrl name='@Latenightsnack' role='document' /&gt;&lt;ctrl name=' (channel)' role='grouping' /&gt;&lt;ctrl name='Message @Latenightsnack' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='@Latenightsnack' role='document' /&gt;&lt;ctrl name=' (channel)' role='grouping' /&gt;&lt;ctrl name='Message @Latenightsnack' role='editable text' automationid='' /&gt;" Guid="58748809-09ce-416a-82e0-d2a12618664b" ImageBase64="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" InformativeScreenshot="21b8fd0f0a59883361b151bb2076b3f0.png" ScopeSelectorArgument="&lt;wnd app='discord.exe' cls='Chrome_WidgetWin_1' title='@Latenightsnack - Discord' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvElementArea="342, 557, 26, 26" CvTextArea="349, 563, 13, 12" CvTextArgument="+" CvType="Icon" DesignTimeRectangle="340, 555, 30, 30" ElementType="Icon" FriendlyName="'+'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEYSURBVEhL7ZU9CsJAEIU9lljlJoE0/nReQNHC30YvkEJRMJ2CjZ0nW33C6BRvN5sQshFSfBAys+8jm8ym0+1FJgStuDb+R9wfjc1iszPp4WLuj+cHXONenAzoGoa3OE6G5pRdvzIb6EEvy9B4iSfzNZW4mM5WNEvIFZeRCljLMoFTjC1jgUWwbbtTfM5uNEyQPlYT8M51pmAV4+tlQRrpZTUNe2qreLnd0xCN9LKaBlk6G1jF6fE3pzakl9U0mHOdDaxiFsD6GD5rmyeudKvfWTobNO/j8jk8pJfVNIXGCVRxgCBDZwpOcbAjEwT5SQhl5C4p8BIDbFneOwfosW2vxlssIBTjoecc17jnIxQKi6uiFddGIHFkXq+sjt0RfMa2AAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on My Username" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d22e86fe-6218-45b7-9690-2b584616c478" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArgument="Dacostas" CvType="Text" DesignTimeRectangle="132, 174, 64, 20" DesignTimeScaleFactor="1" FriendlyName="'Dacostas'" FullSelectorArgument="&lt;ctrl name='@Dacostas' role='document' /&gt;&lt;ctrl name='Private channels' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='list' /&gt;&lt;ctrl name='Dacostas (direct message)' role='link' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='@Dacostas' role='document' /&gt;&lt;ctrl name='Private channels' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='grouping' /&gt;&lt;ctrl name='Direct Messages' role='list' /&gt;&lt;ctrl name='Dacostas (direct message)' role='link' /&gt;&lt;ctrl automationid='' role='grouping' check:text='Dacostas' /&gt;" Guid="1d97ae82-230f-48c0-a7e0-005572d78c3e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAYCAYAAABDX1s+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN5SURBVFhH7VbBaiJBEN1PC3vLJ3jwkENue8nJBSEXA2JOgigsEUJWQiKiIahEgsssRhbjwXgwQYyIEXEgMBIYEQaEt1XdM844YzYhgfUyDe/QU91dXa9fVc2Xra/b8GHDJ8QFnxAXfEJc8AlxwSfEhRVCyk/wDEOfonedxK5j3eZxgsazgeHVOtvn4CVEf0A2GkOEkS6i0Z3CYGIGFYQcazeLCoZ0p/9ESBspxzdG6GokSBlefV/5vjlsmJCtr0do6WR7qiAg5vvI3o6gM0s8FjNM7vKrCgomUR3MYCzMNS8j1I6/Le27CQXDF9O2MKAPFMSD9v7QeRuTuW23zl+X1nyvpU9StG75NGYYUrrLOxPCebRU69JkVtvIhm2fjHcSQraBw5Zqk1NydnOGeDSJzK0qFDT5ZSloH9Uxe5yiVUgikjhDY8wrpqhFyX7YhMbmcROZRAzp0gM0MnNa7on9efQoKONJQZrPvyHyF1M0EkRkmNO5jgn7+22mdlgSvVciJRsqOqUT+n6CcnfGXtA5ljFkH2k6H6GajiF+WseQHlm7TZp3lng3Iak7PnyEsjkPBHccdqkg4/5Mzo8fBEG9gmNN8AjZXEy8VuaerPM+sg5FBAp92kFBH/LcTIlLW1Gr/l5LmR1a55gHFZM4+VAivkHRbhB05lI9Jj6mEAJLvqNSSnDk1jClG/kzpYmKqvNyS8TQYHlYMrcQlaqRQcblGh4k+0m3jXLCJudfhERyTQyfHalKQ787EvZDcS8anKJqH62St3t+qIYEcn2hAH3cRvWUUiKaR8e08/rPE0IIxpC5bqM3GEETtcRAL2epZD0hMmADWreJC0oLK7UsQgRhPxW0uiMiTb6k8ZhfUcm7CHF3GZE+znVBynm+tBXkupShV7+4loXx9ZSZoZWS89CBTC9plw9iB7aeEHH/sWLvC9cFyct9XH8cPj1xENYQ8vZ/iFTADB0umOkKOibb9qvvo6bS3FNUzYDfKqo/qGiTXesqpr0v5nbRloRArVPRpeJZkAGLoklFteYomjwkIUQqdzWtL1VN9+6xnQiUhVzCS4hrrP1TpQLZsNoXdxt6eU8afKrtkrQviSQzIGfbtfanbqizmWfr93n5PVxEzzpzrqJ1rohuZSkkcFCkx+PmIMebbdeHT4gHPiEu+IS44BPigk+ICz4hK9jGX50Ounq9wj7/AAAAAElFTkSuQmCC" InformativeScreenshot="361b1c73d4df84a7f28ed04b4f03a3be.png" ScopeSelectorArgument="&lt;wnd app='discord.exe' cls='Chrome_WidgetWin_1' title='@Dacostas - Discord' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '﻿'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d22e86fe-6218-45b7-9690-2b584616c478" Text="[&quot;Twitter Trending message has been sent at &quot; +TimeString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CvTextArgument="Message @Dacostas" CvType="Text" DesignTimeRectangle="384, 548, 565, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'﻿'" FullSelectorArgument="&lt;ctrl name='@Dacostas' role='document' /&gt;&lt;ctrl name=' (channel)' role='grouping' /&gt;&lt;ctrl name='Message @Dacostas' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='@Dacostas' role='document' /&gt;&lt;ctrl name=' (channel)' role='grouping' /&gt;&lt;ctrl name='Message @Dacostas' role='editable text' automationid='' /&gt;" Guid="41556abe-2019-4511-b691-e2de09eb6074" ImageBase64="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" InformativeScreenshot="4e2a26968b03110bb6509bbbb371fed1.png" ScopeSelectorArgument="&lt;wnd app='discord.exe' cls='Chrome_WidgetWin_1' title='@Dacostas - Discord' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvElementArea="342, 557, 27, 26" CvTextArea="349, 563, 13, 13" CvTextArgument="+" CvType="Icon" DesignTimeRectangle="340, 555, 31, 30" ElementType="Icon" FriendlyName="'+'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVEhL7ZU9CsJAEIU9lljlJgEbfzovoGjhb6MXSKEomE7Bxs6TrT5hdJA3m40ENoLFByEz+z5dd8dGs5W4WPzlUfgteac/cNPl2mXbo7tcb0/wjHdpu0vXWATL03bP7fPTS2iBHvSyjE+C5MPJgop8jMZzmqUplH8jFrCWZQpeObaPhZbB9xN45Yf8TAMF6WM1AWdAZ2pMOU41C9NIL6tprG9vymerDQ3SSC+raZClswVTnu3e99hCellNgzmgswVTzkJYHyN0bT3llW77I0tnC/U8cCEDRnpZTVP6qoEqhgwydKbGK486XkG0Pxbhmw9QJAZBcoDtKzoDAD2+rdYEywUE4+roOYBnvAuVCqXlVfKXRyGiPHF3AQjBm6MFzwMAAAAASUVORK5CYII=" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="142, 21, 1125, 616" FilePath="C:\Users\jorda\AppData\Local\Discord\app-1.0.9013\discord.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMxSURBVFhHxVfLThRBFGXNiq8grPkXRhckMiO6UQNsjNENcaFxMy5cuJAQEpeuUKPiQlAeASHjhqgwiDExPsLLRKdmpl/Xc7qr0w+qm5kB9CQnmelbde6tqtu3b3W1ioFirQccBCfACrg7UFROQP6urWkbx/ToaccHxHrBSVAVSkpaIcdyDn73aZn2AYFusAxaaQetknO1RreWbQ2Y0Fso1dZNop0QeuvU1PL5wIT+As40LXJcIleo2a/dmAHHvQOlk3cekkFk7gScd8P5iW17FvVxHM4JBFA2TTgNIoCydhsAK+9DALnZPjyi5P5kU+YWbLlVbhyy377b8G0cc2E0aUsTAfDtiI4Cf6ZMA8mhy0pW3zniOJ6E2Nv3ZOuzKz9+uvId3Np2Zf8gsnMs5wxdMmuS8DkZOmeFyywyL2dtLds+Zl7ZRk2SPumbAQyaBpBjN+riutHK2gXnUsOkTdI3A5gwGcm5xc5XH+I1NEzaJH0zgDWTsYizb1qdrz6EBQ1qmXzAd4UBGAvPvQdNLRGBifbkhSXvNxz9JMKHTce3xZMxBLVMPugbASjHZJydT24/z3P0enCeZ84r2fzkaotIFW8Bn9E2gjHpvKFWXDskfWcGsP0lckDw1Yvbp59Z2iLy+LmVsO3uJQOgVtweUgdgPoLff5Ii8YzmaquxHWAdODsczOMupXeAWnHtkPoIahWTMS1CHPzy5OmM7Z93Gh+ryIEZcw5Qy+QDvtcYgPE1NAXQKXIC8F9DYyHa2UvmwNdvrrxZsqXRyA6sXvf82sHyHMfObmYO+IXIWIovjilZemuL50UON7DN/NCM32nIxMOmPJq2fPI3n3FOPDc4d2HZ9p+n9QtFhVKsguYVAbCBPDwIvHazjkAcsW1PFleyq1rI5VXHLz7zcHx1PK8Mq+BjRCAAdr65n+PSFSXncr5uITnmqHFwbmEHkh0zAviHDYlKNiQEAmAb/v9aMgIGHsUpNqX+bSq/Pcd9oP80ggg0a/lteQi/PT/B46AW2NrFJATbdL9TZsYaRFshnHZ2NYsDk/vAKbDtyynY3qrzALH49ZxX8fT1nFd2fT3XFe5IdHX9BYv21DcBXPtHAAAAAElFTkSuQmCC" InformativeScreenshot="7fd2d114db04958a05c4eaf7768518cb.png" Selector="&lt;wnd app='discord.exe' cls='Chrome_WidgetWin_1' title='Friends - Discord' /&gt;" Title="Friends - Discord" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAdpJREFUWEftVtFtwjAQZQT+SIQTZYSO0BE6AiNkg3iE/qEkSHSDdoOyAWwAGzj8UOgPvTOXQpOzsWki8cGTngTKnZ9z987O4IEauzBLD4FcA4+HkVx+BXJCj/oHimnhBnejLKWQfvEdyiW3AeCaQvoFI/xLCrkKMVXPoqw+o7JSwGNUVOuo2M6DqUooRAPjhnM1pL8n7INsw4mjFyjEirjcZlrUQJErOc5VqjcIm6K0M/YnA7Y24GLEcaEmnCjHGKqSQEUg54nSz9BGDOUKhbEie0cDRjMoNSPWZAytEUX1ruNn6oXS/6LuDe5SQFmhZEvsmX7IAJ9xYlZCxSi9DVGoVy4Jexfm7V37lB8Zmt68RjJXCZaKSybqMmpDadfbzdckVpakeGAL4lKlXHIXbI1fE6JUGz0qjsbypCIZM0we6IKw9oJkzEhgPrnkLogvRzJ29OUB9vAxAWc17tAHTuW/RIxjBiW7MpLutB0+HGAa/E84E7nLxwXgBcku6MH68qEl/YGlA664xV2IlaSl/gccT28/+PadAwrTee8srq/dW94c72i83fDrBY1z03EM49ZFzxfs4jZCTmf9RuhrGc4CWPgDuLrsv/6NxszVG8ZArP2Ge+CB+8Zg8AMjNneK3AzsXAAAAABJRU5ErkJggg==" InformativeScreenshot="c5ea30f87a61245ff8f5a025de16eb0c.jpg" Selector="&lt;html app='chrome.exe' title='(1) Home / Twitter' /&gt;" Title="(1) Home / Twitter" Url="https://twitter.com/home" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
